@@ -31,11 +31,13 @@ except:
     Test = False
 
 Compare_Result = np.load(Compare_Result_Path)
+
 Special_TestCases = ['com.google.android.youtube.gts.DecodePerformanceTest#testVideoDecodePerformance',
                      'android.media.cts.DecodeAccuracyTest#testGLViewLargerHeightDecodeAccuracy',
                      'android.media.cts.DecodeAccuracyTest#testGLViewDecodeAccuracy',
                      'android.media.cts.DecodeAccuracyTest#testGLViewLargerWidthDecodeAccuracy',
-                     'android.media.cts.DecodeAccuracyTest#testSurfaceViewVideoDecodeAccuracy'
+                     'android.media.cts.DecodeAccuracyTest#testSurfaceViewVideoDecodeAccuracy',
+                     'VtsHalWifi', 'VtsHalBluetooth'
                      ]
 
 if Release == True or Test == True:
